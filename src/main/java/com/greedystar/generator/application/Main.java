@@ -13,7 +13,7 @@ import com.greedystar.generator.invoker.base.Invoker;
 public class Main {
 
     public static void main(String[] args) {
-
+        single();
     }
 
     public static void many2many() {
@@ -53,8 +53,8 @@ public class Main {
 
     public static void single() {
         Invoker invoker = new SingleInvoker.Builder()
-                .setTableName("user")
-                .setClassName("User")
+                .setTableName("book")
+                .setClassName("Book")
                 .build();
         invoker.execute();
     }

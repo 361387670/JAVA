@@ -1,0 +1,14 @@
+db: # v1.1.0 新增
+  url: jdbc:mysql://localhost:3306/spring_boot?serverTimezone=GMT%2B8
+  username: root
+  password: root
+author: csl
+packageName: com.book.test
+convertor: com.book.test.convertor.CustomConvertor #v1.3.0新增
+path:
+  controller: controller
+  service: service.impl
+  interf: service # v1.2.1 新增
+  dao: dao
+  entity: entity
+  mapper: mybatis
