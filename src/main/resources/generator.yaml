@@ -1,9 +1,9 @@
 db: # v1.1.0 新增
-  url: jdbc:mysql://localhost:3306/spring_boot?serverTimezone=GMT%2B8
-  username: root
-  password: root
+  url: jdbc:mysql://uat.rds.iplus.chanjue:3306/dealsm?serverTimezone=GMT%2B8
+  username: admin
+  password: va!2Fj2^
 author: csl
-packageName: com.book.test
+packageName: com.yeji.test
 convertor: com.book.test.convertor.CustomConvertor #v1.3.0新增
 path:
   controller: controller

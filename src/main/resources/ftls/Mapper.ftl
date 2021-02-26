@@ -8,30 +8,6 @@
         ${Collection}
     </resultMap>
 
-    <sql id="${EntityName}Columns">
-        ${ColumnMap}
-    </sql>
-
-    <sql id="${EntityName}Joins">
-        ${Joins}
-    </sql>
-
-    <select id="get" resultMap="${EntityName}ResultMap">
-        SELECT
-        <include refid="${EntityName}Columns" />
-        FROM `${TableName}` <include refid="${EntityName}Joins" />
-        <where>
-            `${TableName}`.`${PrimaryColumn.columnName}` = ${r"#{"}${PrimaryColumn.propertyName}${r"}"}
-        </where>
-    </select>
-
-    <select id="findAll" resultMap="${EntityName}ResultMap">
-        SELECT
-        <include refid="${EntityName}Columns" />
-        FROM `${TableName}` <include refid="${EntityName}Joins" />
-        <where>
-        </where>
-    </select>
 
     <insert id="insert">
         INSERT INTO `${TableName}`(
@@ -57,11 +33,6 @@
     <update id="update">
         UPDATE `${TableName}` SET
         ${UpdateProperties}
-        WHERE `${PrimaryColumn.columnName}` = ${r"#{"}${PrimaryColumn.propertyName}${r"}"}
-    </update>
-
-    <update id="delete">
-        DELETE FROM `${TableName}`
         WHERE `${PrimaryColumn.columnName}` = ${r"#{"}${PrimaryColumn.propertyName}${r"}"}
     </update>
 

@@ -53,8 +53,8 @@ public class Main {
 
     public static void single() {
         Invoker invoker = new SingleInvoker.Builder()
-                .setTableName("book")
-                .setClassName("Book")
+                .setTableName("T_DM_ACHIEVE_ATTRIBUTE_CATAGORY_DETAIL")
+                .setClassName("TDmAchieveAttributeCatagoryDetail")
                 .build();
         invoker.execute();
     }
