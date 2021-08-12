@@ -2,6 +2,7 @@ package com.greedystar.generator.entity;
 
 import com.greedystar.generator.utils.ConvertorUtil;
 import com.greedystar.generator.utils.StringUtil;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.sql.JDBCType;
@@ -12,6 +13,7 @@ import java.sql.JDBCType;
  * @author GreedyStar
  * @since 2018/4/19
  */
+@Data
 public class ColumnInfo implements Serializable {
     /**
      * 列名
@@ -52,59 +54,5 @@ public class ColumnInfo implements Serializable {
         this.isPrimaryKey = isPrimaryKey;
     }
 
-    public String getColumnName() {
-        return columnName;
-    }
 
-    public void setColumnName(String columnName) {
-        this.columnName = columnName;
-    }
-
-    public String getPropertyName() {
-        return propertyName;
-    }
-
-    public void setPropertyName(String propertyName) {
-        this.propertyName = propertyName;
-    }
-
-    public JDBCType getColumnType() {
-        return columnType;
-    }
-
-    public void setColumnType(JDBCType columnType) {
-        this.columnType = columnType;
-    }
-
-    public String getPropertyType() {
-        return propertyType;
-    }
-
-    public void setPropertyType(String propertyType) {
-        this.propertyType = propertyType;
-    }
-
-    public String getRemarks() {
-        return remarks;
-    }
-
-    public void setRemarks(String remarks) {
-        this.remarks = remarks;
-    }
-
-    public String getTableRemarks() {
-        return tableRemarks;
-    }
-
-    public void setTableRemarks(String tableRemarks) {
-        this.tableRemarks = tableRemarks;
-    }
-
-    public boolean isPrimaryKey() {
-        return isPrimaryKey;
-    }
-
-    public void setPrimaryKey(boolean primaryKey) {
-        isPrimaryKey = primaryKey;
-    }
 }
