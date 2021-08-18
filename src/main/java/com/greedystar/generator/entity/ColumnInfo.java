@@ -42,6 +42,8 @@ public class ColumnInfo implements Serializable {
      */
     private boolean isPrimaryKey;
 
+
+
     public ColumnInfo(String columnName, int columnType, String remarks, String tableRemarks, boolean isPrimaryKey) {
         this.columnName = columnName;
         this.propertyName = StringUtil.columnName2PropertyName(columnName);
