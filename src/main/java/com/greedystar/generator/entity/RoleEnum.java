@@ -11,7 +11,8 @@ public class RoleEnum {
          */
 
         LEASE("1", "租赁"),
-        SALES("0", "买卖");
+        SALES("0", "买卖"),
+        SAAS("3", "租售一体");
 
         private String code;
         private String name;
