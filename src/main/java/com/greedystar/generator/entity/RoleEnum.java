@@ -9,7 +9,9 @@ public class RoleEnum {
         /**
          * 类型
          */
-        LEASE("1", "租赁");
+
+        LEASE("1", "租赁"),
+        SALES("0", "买卖");
 
         private String code;
         private String name;
